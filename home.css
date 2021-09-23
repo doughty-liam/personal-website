@@ -1,0 +1,157 @@
+@font-face {
+    font-family: main_font;
+    src: url( fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+
+    font-family: secondary_font;
+    src: url( fonts/static/Inter-ExtraLight.ttf );
+
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: main_font;
+
+}
+
+
+.middle {
+    
+    top: 0;
+    background: linear-gradient( to bottom right, rgb(10, 5, 15), rgb( 15, 15, 35 ) );
+    width: 100%;
+    height: 1500px;
+
+}
+
+.top_text_container {
+
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    top: calc( 50vh - 350px );
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.top_text_container h1 {
+
+    padding-left: 12px;
+    font-family: main_font;
+    color: #e63462;
+    font-size: 26pt;
+    line-height: 50px;
+
+}
+
+.top_text_container h2 {
+
+    color: #e63462;
+    font-size: 130pt;
+    line-height: 200px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 12px;
+
+}
+
+.top_text_container h3 {
+    
+    font-family: secondary_font;
+    font-size: 50px;
+    line-height: 100px;
+    color: #e63462;
+    /* text-shadow: 2px 2px #e63462; */
+    padding-left: 12px;
+
+}
+
+
+.card {
+
+    position: absolute;
+    right: 10%;
+    top: calc( 50vh - 570px );
+    height: 1100px;
+    width: 750px;
+    border-radius: 50px 300px;
+    background-color: #e63462;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-1 {
+
+   background-color: #e63462;
+
+}
+
+.card-2 {
+
+    background-color: #4aff13;
+    transform: translate( -30px, 10px );
+
+}
+
+.card-3 {
+
+    background-color: #a288e3;
+    transform: translate( -60px, 20px );
+
+}
+
+.card-4 {
+
+    background-color: #2bf1f8;
+    transform: translate( -90px, 30px );
+
+}
+
+.card-5 {
+
+    background-color: #f9e900;
+    transform: translate( -120px, 40px );
+
+}
+
+.card-5 h1 {
+
+    font-size: 170pt;
+    color: #000000;
+
+}
+
+.card-5 h2 {
+
+    font-size: 30pt;
+
+}
+
+.card-5 p {
+
+    position: absolute;
+    bottom: 10px;
+
+}
+
+
+.footer {
+
+    position: relative;
+    top: 0px;
+    background-color: rgb( 5, 5, 15 );
+    height: 200px;
+    width: 100%;
+    color: #babae1;
+    font-size: 20pt;
+
+}

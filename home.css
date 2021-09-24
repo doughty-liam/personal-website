@@ -37,6 +37,7 @@
     left: 5%; 
     display: flex;
     flex-direction: column;
+    transform-origin: left;
     
 }
 
@@ -67,7 +68,6 @@
     font-size: 50px;
     line-height: 100px;
     color: #e63462;
-    /* text-shadow: 2px 2px #e63462; */
     padding-left: 12px;
 
 }

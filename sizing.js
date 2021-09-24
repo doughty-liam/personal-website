@@ -1,14 +1,26 @@
 var screenHeight = window.innerHeight;
 var screenWidth = window.innerWidth;
 
-console.log( 'height of the current display: ' +screenHeight );
 
-if( innerHeight < 1000 ) {
+var contentContainer = document.querySelector( '.top_text_container' );
+let contentContainerHeight = contentContainer.offsetHeight;
+let contentContainerWidth = contentContainer.offsetWidth;
+let scalingFactor = (screenHeight/contentContainerHeight) - (screenHeight/950);
+scalingFactor = scalingFactor.toFixed(2);
 
-    var content = document.querySelector( '.top_text_container' );
-    let contentHeight = content.offsetHeight;
-    content.setAttribute( "style", "transform: scale( 0.8 );" );
+contentContainer.style.transform = "scale(" +scalingFactor+ ")";
 
-    console.log( 'contentHeight: ' +contentHeight );
+window.addEventListener( 'resize', function() {
 
-}
+    screenHeight = window.innerHeight;
+    screenWidth = window.innerWidth;
+    
+    if( screenHeight > 700 ) {
+        
+        scalingFactor = (screenHeight/contentContainerHeight) - (screenHeight/950);
+        scalingFactor = scalingFactor.toFixed(2);
+        contentContainer.style.transform = "scale(" +scalingFactor+  ")";
+
+    }
+
+} );
